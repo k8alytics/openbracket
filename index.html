@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>quiet builds</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap">
+
+  <style>
+    :root {
+      --accent: #5BB9A4; /* teal green */
+      --bg: #F9F9FC;     /* very light purple/gray */
+      --text: #1C1B1F;   /* darker charcoal for better contrast */
+      --muted: #777C89;  /* cool muted gray-blue */
+      --card-data: #D0F0E0; /* mint green */
+      --card-design: #F7D8E8; /* pale pink */
+      --card-systems: #E3E9FA; /* pale periwinkle */
+      --button-bg: #5BB9A4;
+      --button-hover: #4CA492;
+      --hero-bubble: #F3E8FA;
+      --line-color: #5BB9A4;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'DM Sans', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      font-size: 1.05em;
+    }
+
+    header {
+      text-align: center;
+      padding: 36px 20px 24px;
+    }
+
+    header img {
+      max-width: 300px;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 2.8em;
+      margin-bottom: 0.1em;
+    }
+
+    h2 {
+      font-weight: 400;
+      color: var(--muted);
+      margin-top: 0;
+    }
+
+    section {
+      max-width: 960px;
+      margin: 16px auto 30px;
+      padding: 0 24px;
+    }
+
+    section h3 {
+      font-size: 1.6em;
+      margin-bottom: 0.15em;
+      color: var(--text);
+    }
+
+    p {
+      margin-bottom: 0.75em;
+    }
+
+    section p {
+      margin-top: 0.3em;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a[href^="mailto:"]:hover {
+      background-color: var(--button-hover);
+    }
+
+    .services-tags {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      justify-content: center;
+      margin-top: 24px;
+    }
+
+    .service-column {
+      text-align: center;
+      background: #fff;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+      border: 2px solid var(--accent);
+    }
+
+    .service-group-title {
+      font-weight: 600;
+      font-size: 1.1em;
+      margin: 12px 0 16px;
+      color: var(--text);
+    }
+
+    .services-tags ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .services-tags li {
+      border-radius: 30px;
+      padding: 14px 20px;
+      margin: 10px 0;
+      font-size: 0.96em;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+      background-color: inherit;
+      border: none;
+    }
+
+    .services-tags li:hover {
+      transform: translateY(-2px);
+    }
+
+    .group-data li {
+      background-color: var(--card-data);
+    }
+
+    .group-design li {
+      background-color: var(--card-design);
+    }
+
+    .group-systems li {
+      background-color: var(--card-systems);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9em;
+      color: var(--muted);
+    }
+
+.hero-title {
+  display: inline-block;
+  background-color: var(--hero-bubble);
+  color: var(--text);
+  padding: 12px 22px;
+  border-radius: 40px;
+  font-size: 2.2em;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.hero-subtitle {
+  font-size: 1em;
+  font-weight: 500;
+  margin-top: 8px;
+  color: var(--muted);
+}
+
+  </style>
+</head>
+<body>
+  <div style="height: 6px; background: var(--accent); width: 100%;"></div>
+  <header>
+  <div class="hero-title">quiet builds.</div><br>
+  <hr style="width: 50%; margin: 12px auto 6px auto; border: none; border-top: 2px solid var(--line-color);" />
+</header>
+
+  <section id="about">
+    <h3>Hi, I’m Kate</h3>
+    <p>
+    I’m shaped by a background in math and informatics, but it’s curiosity, clarity, and a soft spot for clever ideas that guide how I build.
+  </p>
+  <p>
+    I care about thoughtful systems, clean design, and work that <em> feels </em> as good as it <em> functions.</em>
+  </p>
+  </section>
+
+ <section id="services">
+  <h3>What I Do</h3>
+  <p>
+	Balancing computational power with usability is the cornerstone of every tool I create. Here’s what that looks like:
+  </p>
+  <div class="services-tags">
+    <div class="service-column group-data">
+      <div class="service-group-title">Data & Discovery</div>
+      <ul>
+        <li>Design and refine mathematical models</li>
+        <li>Build lightweight AI workflows that solve real problems</li>
+        <li>Find the story hiding in the spreadsheet</li>
+      </ul>
+    </div>
+
+    <div class="service-column group-design">
+      <div class="service-group-title">Design & Delivery</div>
+      <ul>
+        <li>Prototype tools people can enjoy using</li>
+        <li>Make information feel like a conversation</li>
+        <li>Design from the inside out—clarity first</li>
+      </ul>
+    </div>
+
+    <div class="service-column group-systems">
+      <div class="service-group-title">Systems & Support</div>
+      <ul>
+        <li>Bring structure to half-formed ideas</li>
+        <li>Build workflows that fit how small teams work</li>
+        <li>Write docs you can actually read and understand</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+  <section id="contact">
+    <h3 id="connect-heading">Send a signal</h3>
+<p>
+ Open to projects, questions, or curious conversations - <em> no hypothesis required.</em></p>
+    <p style="text-align: center;">
+      <a href="mailto:you@example.com" style="background-color: var(--button-bg); color: white; padding: 12px 22px; border-radius: 30px; text-decoration: none; display: inline-block; font-weight: 600; font-size: 1em; transition: background-color 0.3s;">
+        ✉️ User Response Requested
+      </a>
+    </p>
+  </section>
+
+  <footer id="footer-quote">
+    &copy; 2025 Kate. HTML kisses and semicolon hugs.
+  </footer>
+<script>
+    const headers = [
+      "Send a Signal",
+      "Leave a Note",
+      "Curious? LMK.",
+      "Break the Silence"
+    ];
+    const randomHeader = headers[Math.floor(Math.random() * headers.length)];
+    document.getElementById("connect-heading").innerText = randomHeader;
+
+    const footers = [
+      "&copy; 2025 ⌁ Kate ⌁ HTML kisses and semicolon hugs.",
+      "&copy; 2025 ⌁ Kate ⌁ Now lint-free.",
+      "&copy; 2025 ⌁ Kate ⌁ Resolved it. Don’t ask how.",
+      "&copy; 2025 ⌁ Kate ⌁ May contain trace amounts of logic.",
+      "&copy; 2025 ⌁ Kate ⌁ If you're reading this, you’re part of the build."
+    ];
+    const footerText = footers[Math.floor(Math.random() * footers.length)];
+    document.getElementById("footer-quote").innerHTML = footerText;
+  </script>
+</body>
+</html>
